@@ -1,0 +1,11 @@
+valid_pin = "1234"
+entered_pin = ""
+
+# Continue looping as long as the entered PIN is incorrect
+while entered_pin != valid_pin:
+    entered_pin = input("Enter PIN: ")
+    
+    if entered_pin == valid_pin:
+        print("Access Granted.")
+    else:
+        print("Incorrect PIN. Try Again.\n")

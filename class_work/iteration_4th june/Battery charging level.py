@@ -1,5 +1,5 @@
 #program for display battery level
-charging_level = 10
+charging_level = 0
 electricity_status = True
 while(charging_level<=100):
     if(electricity_status):

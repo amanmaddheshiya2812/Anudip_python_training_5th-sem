@@ -1,0 +1,10 @@
+#Correct Password
+correct_password = "admin123"
+while True:
+    user_input = input("Enter Password: ")
+    
+    if user_input == correct_password:
+        print("Login Successful.")
+        break
+    else:
+        print("Invalid Password.\n")
