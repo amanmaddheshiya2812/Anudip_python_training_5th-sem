@@ -1,0 +1,40 @@
+#Employee Detail
+employees = (
+    ("E101", "Anuj", 92),
+    ("E102", "Rahul", 76),
+    ("E103", "Priya", 58),
+    ("E104", "Neha", 88),
+    ("E105", "Amit", 45)
+)
+
+#Displaying details of employees scoring 80 or above
+print("Employees Scoring 80 or Above:")
+for emp in employees:
+    if emp[2] >= 80:
+        print(f"{emp[0]} {emp[1]} {emp[2]}")
+
+#Count employees who need improvement (score below 60)
+needs_improvement_count = sum(1 for emp in employees if emp[2] < 60)
+print(f"\nEmployees Needing Improvement: {needs_improvement_count}")
+
+# Find the employee with the highest score
+highest_performer = max(employees, key=lambda x: x[2])
+print(f"\nHighest Performer:\n{highest_performer[0]} {highest_performer[1]} {highest_performer[2]}")
+
+#Create a list of names of employees scoring above 75
+high_performers = [emp[1] for emp in employees if emp[2] > 75]
+print(f"\nHigh Performers:\n{high_performers}")
+
+# Display performance category for each employee
+print("\nPerformance Categories:")
+for emp in employees:
+    score = emp[2]
+    if score >= 90:
+        category = "Excellent"
+    elif score >= 75:
+        category = "Good"
+    elif score >= 60:
+        category = "Average"
+    else:
+        category = "Needs Improvement"
+    print(f"{emp[1]} -> {category}")
