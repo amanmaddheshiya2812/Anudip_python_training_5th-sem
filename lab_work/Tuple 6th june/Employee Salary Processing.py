@@ -6,7 +6,7 @@ employees = [
 ]
 
 # Display employees earning above ₹50,000
-print("Employees earning above ₹50,000:")
+print("Employees earning above ₹50,000:" )
 for name, salary in employees:
     if salary > 50000:
         print(f"- {name}")

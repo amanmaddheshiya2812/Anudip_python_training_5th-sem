@@ -4,7 +4,6 @@ books = [
     ("Java Programming", 3),
     ("Machine Learning", 0)
 ]
-
 # Display unavailable books (count is 0)
 print("Unavailable Books:")
 for title, count in books:
