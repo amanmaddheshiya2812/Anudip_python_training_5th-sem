@@ -41,5 +41,5 @@ promotion_list = [product for product, count in sales.items() if count < 15]
 print(f"\nProducts Requiring Promotion:\n{promotion_list}")
 #----------------------------------------------
 # 6. Count products having sales between 10 and 30
-count_range = len([count for count in sales.values() if 10 <= count <= 30])
+count_range = len([count for count in sales.values() if 10 < count <= 30])
 print(f"\nProducts Having Sales Between 10 and 30: {count_range}")
