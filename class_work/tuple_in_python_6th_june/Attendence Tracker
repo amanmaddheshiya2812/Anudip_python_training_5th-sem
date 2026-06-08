@@ -10,4 +10,4 @@ print("\nPresent Students:")
 
 for roll_no, status in attendance.items():
     if status.lower() == "present":
-        print("Present Student",roll_no)
+        print("Present Student :",roll_no)
