@@ -4,7 +4,6 @@ char_count = 0
 special_char_count = 0
 for char in string:
     char_count += 1
-    if not char.isalnum() and not char.isspace():
+    if not char.isalnum() :
         special_char_count += 1
 print("Number of characters:", char_count)
-print("Number of special characters:", special_char_count)
