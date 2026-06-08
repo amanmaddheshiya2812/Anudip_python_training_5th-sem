@@ -1,0 +1,45 @@
+"""Tasks 
+1. Display products sold more than 20 times.  
+2. Find the best-selling product.  
+3. Find the least-selling product.  
+4. Calculate total products sold.  
+5. Create a list of products requiring promotion (sales < 15).  
+6. Count products having sales between 10 and 30:6 """
+sales = {
+    "Laptop": 15,
+    "Mouse": 45,
+    "Keyboard": 32,
+    "Monitor": 12,
+    "Headphones": 28,
+    "Printer": 8,
+    "Webcam": 20,
+    "Speaker": 18,
+    "Tablet": 10,
+    "Router": 25
+}
+#----------------------------------------------
+# 1. Display products sold more than 20 times
+print("Products Sold More Than 20 Times:")
+for product, count in sales.items():
+    if count > 20:
+        print(product)
+#----------------------------------------------
+# 2. Find the best-selling product
+best_selling = max(sales, key=sales.get)
+print(f"\nBest Selling Product: {best_selling} ({sales[best_selling]})")
+#----------------------------------------------
+# 3. Find the least-selling product
+least_selling = min(sales, key=sales.get)
+print(f"Least Selling Product: {least_selling} ({sales[least_selling]})")
+#----------------------------------------------
+# 4. Calculate total products sold
+total_units = sum(sales.values())
+print(f"\nTotal Units Sold: {total_units}")
+#----------------------------------------------
+# 5. Create a list of products requiring promotion (sales < 15)
+promotion_list = [product for product, count in sales.items() if count < 15]
+print(f"\nProducts Requiring Promotion:\n{promotion_list}")
+#----------------------------------------------
+# 6. Count products having sales between 10 and 30
+count_range = len([count for count in sales.values() if 10 <= count <= 30])
+print(f"\nProducts Having Sales Between 10 and 30: {count_range}")
