@@ -49,8 +49,6 @@ else:
             special_char_count += 1       # Check for special characters
             special_chars.append(char)   # Store the special character separately
 
-    
-
     print(f"Uppercase Letters: {uppercase_count}")
     print(f"Lowercase Letters: {lowercase_count}")
     print(f"Digits: {digit_count}")

@@ -69,10 +69,6 @@ for char in message.lower():
 print("Number of vowels: ", vowel_count)
 print("Number of consonants: ", consonant_count)
 
-
-
-
-
 '''
 Output:
 Message:  Python is awesome and Python is easy to learn
