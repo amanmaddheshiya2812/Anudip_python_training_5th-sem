@@ -7,6 +7,7 @@ Write a program to:
 5. Create a compressed output:  
 A3B3C3D3A3 
 6. Calculate compression ratio. '''
+
 text = "AAABBBCCCDDDAAA"
 
 # 1. Validation
